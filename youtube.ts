@@ -22,27 +22,27 @@ class Video{
         this._numberOfComments = numberOfComments;
     }
 
-    getVideoTitle = () => {
+    getVideoTitle = () :string =>  {
         return this._videoTitle;
     }
 
-    getDuration = () => {
+    getDuration = () :string => {
         return this._duration;
     }
 
-    getNumberOfViews = () => {
+    getNumberOfViews = () :number=> {
         return this._numberOfViews;
     }
 
-    getNumberOfLikes = () => {
+    getNumberOfLikes = () :number=> {
         return this._numberOfLikes;
     }
 
-    getNumberOfDislikes = () => {
+    getNumberOfDislikes = () :number=> {
         return this._numberOfDislikes;
     }
 
-    getComments = () => {
+    getComments = () :Array<Comments>=> {
         return this._comments;
     }
 
@@ -50,13 +50,13 @@ class Video{
         this._numberOfComments = commentCount;
     }
 
-    getNumberOfComments = () => {
+    getNumberOfComments = ()  :number=> {
         return this._numberOfComments
     }
     setNumberOfLikes = (value: number) => {
         this._numberOfLikes = value;
     }
-    getChannelProfilePic = () => {
+    getChannelProfilePic = () :URL=> {
         return this._channelProfilePic;
     }
 
@@ -124,7 +124,7 @@ class Comments {
     getCommentText = (): string =>{
         return this._commentText;
     }
-    getReplies = () =>  {
+    getReplies = () :Array<Reply>=>  {
         return this.replies;
     }
 
